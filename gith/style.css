@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cor1: #ecab4a;
+    --cor2: #f4be38;
+}
+
+header{
+    background-color: var(--cor1);
+    width: 100wh;
+    height: 90px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h1{
+    margin-bottom: 5px;
+    color: white;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input{
+    width: 60vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}
+
+/*blocos com as receitas que estão na pagina*/
+.bloco-receita{
+    margin-bottom: 20px;
+    width: 16.3vw;
+    height: 33vh;
+    text-align: start;
+    position: relative;
+    left: 35em;
+    top: 50px;
+    background-color: rgba(128, 128, 128, 0.658);
+    border-radius: 20px;
+    transition-duration: 0.4s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bloco-receita img{
+    width: 250px;
+    height: 140px;
+    border-radius: 20px 20px 0px 0px;
+    transition-duration: 0.4s;
+}
+
+.bloco-receita p{
+    margin-top: 10px;
+    font-size: large;
+    padding-left: 10px;
+}
+
+.bloco-receita button{
+    margin-top: 15px;
+    height: 5vh;
+    width: 5vw;
+    position: relative;
+    left: 10px; 
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+/*animação*/
+:hover.bloco-receita{
+    height: 15.8em;
+    width: 16.3em;
+}
+
+:hover.bloco-receita img{
+    height: 160px;
+    width: 260px;
+}
+
+:hover.bloco-receita button{
+    width: 15.5vw;
+}
+
+/*parte das receitas favoritas do que o usuario escolher*/
+main #favoritos{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #ffd54f;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+h2{
+    color: white;
+}
+
+footer{
+    text-align: center;
+    margin-top: 60px;
+}
+

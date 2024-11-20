@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Minhas receitas</title>
+</head>
+<body>
+    <header>
+        <h1>Minha Receita Favorita</h1>
+        <input type="text" name="receitas" id="receitas" placeholder="Buscar receitas...">
+    </header>
+
+    <main>
+        <div id="receitas">
+            <div class="bloco-receita">
+                <a href="https://www.qualy.com.br/receitas/bolo-de-cenoura-com-chocolate/?gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7oxuL8LC9aAOxDVSfC9S2ijbh5WwfSEBLSnZE4Fq5TRhS71dI4SbnAaAjVyEALw_wcB&gclsrc=aw.ds" target="_blank"><img src="cenoura.jpg" alt="imagem da Receita"></a>
+                <p>Bolo cenoura</p>
+                <button id="salvar" onclick="salvarbolo()">Salvar</button>
+            </div>
+            <div class="bloco-receita">
+                <a href="https://www.tudogostoso.com.br/receita/11325-feijoada-tipica.html" target="_blank"><img src="feijoada.jpg" alt="imagem da Receita"></a>
+                <p>Feijoada</p>
+                <button id="salvar" onclick="salvarfeijoada()">Salvar</button>
+            </div>
+            <div class="bloco-receita">
+                <a href="https://www.tudogostoso.com.br/receita/876-lasanha-de-carne-moida.html" target="_blank"><img src="lasanha.jpg" alt="imagem da Receita"></a>
+                <p>Lasanha</p>
+                <button id="salvar" onclick="salvarlasanha()">Salvar</button>
+            </div>
+        </div>
+
+        <div id="favoritos">
+            <h2>Favoritos:</h2>
+            <p id="adicionar"></p>
+        </div>
+    </main>
+   
+    <footer>
+        <p>&copy;2024 Minha Receita Favorita</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
