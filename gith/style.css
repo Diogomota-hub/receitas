@@ -89,6 +89,7 @@ input{
 }
 
 /*parte das receitas favoritas do que o usuario escolher*/
+
 main #favoritos{
     position: fixed;
     right: 0;
@@ -99,6 +100,7 @@ main #favoritos{
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
 }
+
 h2{
     color: white;
 }
@@ -108,3 +110,137 @@ footer{
     margin-top: 60px;
 }
 
+/* Responsividade /mobile */
+
+@media(max-width: 426px) {
+    main #favoritos {
+        display: none;
+    }
+
+    header {
+        background-color: var(--cor1);
+        width: 100wh;
+        height: 120px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .bloco-receita {
+        margin-bottom: 20px;
+        width: 60vw;
+        height: 24vh;
+        text-align: start;
+        position: relative;
+        left: 5em;
+        top: 50px;
+        background-color: rgba(128, 128, 128, 0.658);
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .bloco-receita img {
+        width: 60vw;
+        height: 10vh;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .bloco-receita p {
+        margin-top: 10px;
+        font-size: larger;
+        padding-left: 10px;
+    }
+
+    .bloco-receita button {
+        margin-top: 15px;
+        height: 5vh;
+        width: 20vw;
+        position: relative;
+        left: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: white;
+    }
+
+    /*animação*/
+    :hover.bloco-receita {
+        width: 60vw;
+        height: 24vh;
+    }
+
+    :hover.bloco-receita img {
+        width: 60vw;
+        height: 10vh;
+    }
+
+    :hover.bloco-receita button {
+        width: 50vw;
+    }
+
+}
+
+/*Tablet*/
+@media(min-width: 427px) and (max-width: 769px) {
+    main #favoritos {
+        display: none;
+    }
+
+    header {
+        background-color: var(--cor1);
+        width: 100wh;
+        height: 120px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .bloco-receita {
+        margin-bottom: 20px;
+        width: 60vw;
+        height: 26vh;
+        text-align: start;
+        position: relative;
+        left: 10em;
+        top: 50px;
+        background-color: rgba(128, 128, 128, 0.658);
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .bloco-receita img {
+        width: 60vw;
+        height: 15vh;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .bloco-receita p {
+        margin-top: 10px;
+        font-size: larger;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .bloco-receita button {
+        margin-top: 15px;
+        height: 5vh;
+        width: 20vw;
+        position: relative;
+        left: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: white;
+    }
+
+     /*animação*/
+     :hover.bloco-receita {
+        width: 60vw;
+        height: 25.5vh;
+    }
+
+    :hover.bloco-receita img {
+        width: 60vw;
+        height: 14vh;
+    }
+
+    :hover.bloco-receita button {
+        width: 20vw;
+    }
+}
