@@ -161,7 +161,7 @@ footer{
         background-color: white;
     }
 
-    /*animação*/
+ /*animação*/
     :hover.bloco-receita {
         width: 60vw;
         height: 24vh;
@@ -179,7 +179,7 @@ footer{
 }
 
 /*Tablet*/
-@media(min-width: 427px) and (max-width: 769px) {
+@media(min-width: 769px) {
     main #favoritos {
         display: none;
     }
@@ -221,16 +221,17 @@ footer{
     .bloco-receita button {
         margin-top: 15px;
         height: 5vh;
-        width: 20vw;
+        width: 50vw;
         position: relative;
-        left: 10px;
+        left: 45px;
         border-radius: 5px;
         border: none;
         background-color: white;
+        font-weight: 800;
     }
 
-     /*animação*/
-     :hover.bloco-receita {
+    /*animação*/
+    :hover.bloco-receita {
         width: 60vw;
         height: 25.5vh;
     }
@@ -241,6 +242,6 @@ footer{
     }
 
     :hover.bloco-receita button {
-        width: 20vw;
+        width: 50vw;
     }
 }
